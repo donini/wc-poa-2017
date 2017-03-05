@@ -1,0 +1,14 @@
+# Project files
+/public/
+wp-cli.local.yml
+
+# Mac OS X
+.DS_Store
+
+# Composer
+/vendor/
+/composer.lock
+/composer.phar
+
+# Node
+node_modules/

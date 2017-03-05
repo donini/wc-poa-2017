@@ -1,0 +1,22 @@
+path: public
+url: http://localhost:8080
+
+core download:
+  locale: pt_BR
+
+core config:
+  dbname: wcpoa2017
+  dbuser: root
+  extra-php: |
+    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG_LOG', true );
+    define( 'WP_DEBUG_DISPLAY', false );
+    @ini_set( 'display_errors', 0 );
+    define( 'SCRIPT_DEBUG', true );
+
+core install:
+  title: WordCamp POA 2017
+  admin_user: admin
+  admin_password: admin
+  admin_email: admin@admin.com
+  skip-email: true

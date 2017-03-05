@@ -1,0 +1,23 @@
+{
+	"name" : "edpittol/wc-poa-2017",
+	"description" : "WordCamp POA 2017 remote CSS environment.",
+	"repositories" : [{
+		"type" : "composer",
+		"url" : "https://wpackagist.org"
+	}],
+	"require" : {
+		"wpackagist-theme/twentyseventeen" : "^1.1",
+		"wp-cli/wp-cli" : "^1.1"
+	},
+	"extra" : {
+		"webroot-dir" : "public",
+		"installer-paths" : {
+			"public/wp-content/plugins/{$name}/" : [
+				"type:wordpress-plugin"
+			],
+			"public/wp-content/themes/{$name}/" : [
+				"type:wordpress-theme"
+			]
+		}
+	}
+}
