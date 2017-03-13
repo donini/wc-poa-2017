@@ -8,7 +8,6 @@
   "commaSpace": "always",
   "commentSpace": "always",
   "cssLiteral": "never",
-  "duplicates": true,
   "efficient": "always",
   "extendPref": false,
   "globalDupe": false,
