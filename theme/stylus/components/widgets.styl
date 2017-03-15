@@ -1,20 +1,16 @@
-.wcb_widget_sponsors
-	.sponsor-logo 
-		-webkit-box-shadow none !important
-		-moz-box-shadow none !important
-		box-shadow none !important
-		float left
-		padding 0 !important
-		
-		img
-			max-height 80px
-			border 8px solid $sponsor-border
-			-webkit-box-shadow none !important
-			-moz-box-shadow none !important
-			box-shadow none !important
+.sponsor-level
+    .sponsor-logo
+        box-shadow none !important
+        float left
+        padding 0 !important
 
-		img:nth-child(1)
-			border-right 0
+        .attachment-wcb-sponsor-logo-horizontal-2x
+            max-height 80px
+            border-top 4px solid $sponsor-border
+            border-bottom 4px solid $sponsor-border
+            border-left 4px solid $sponsor-border
+            box-shadow none
 
-		img:last-child
-			border 8px solid $sponsor-border
+    .sponsor-logo:last-child
+        .attachment-wcb-sponsor-logo-horizontal-2x
+            border-right 4px solid $sponsor-border
