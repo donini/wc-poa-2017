@@ -1,0 +1,40 @@
+.home
+    .site-branding
+        text-align center
+
+    .site-title
+        display none
+
+    .site-description
+        clear none
+        font-size 24px
+        font-size 1.5rem
+        font-weight 800
+        letter-spacing .08em
+        line-height 1.25
+        margin 0
+        padding 0
+        text-transform: uppercase
+
+    .wp-custom-header
+        &:after
+            background-image url( 'https://2017.portoalegre.wordcamp.org/files/2017/03/logotipo-2-fundo-transparente-4-e1489544725884.png' )
+            background-size contain
+            content ''
+            height 0
+            left 5%
+            padding-bottom 38.03% // proportional logo height in relation of width
+            position absolute
+            top 10px
+            width 90%
+
+            @media screen and ( min-width: $screen-sm-min )
+                height 169px
+                left 50%
+                margin-left -200px
+                padding-bottom 0
+                width 400px
+
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img
+    height auto
+    top -260px
