@@ -6,7 +6,7 @@ body.page:not( .twentyseventeen-front-page ) .entry-title
     color $main-color
     display inline-block
     font-size 46px
-    padding 5px 30px
+    padding 5px 0
     text-align center
     width 100%
 
@@ -15,3 +15,13 @@ body.page-two-column:not( .archive ) #primary .entry-header,
 body.page-two-column.archive:not( .has-sidebar ) #primary .page-header
     float none
     width 100%
+
+.page.page-one-column .entry-header,
+.twentyseventeen-front-page.page-one-column .entry-header,
+.archive.page-one-column:not( .has-sidebar ) .page-header
+    margin-bottom 1em
+
+.has-header-image:not( .twentyseventeen-front-page ):not( .home )
+    .custom-header-media
+        img
+            top -520px

@@ -5,7 +5,9 @@
     .widget-area
         .widget-column
             h2.widget-title
+                color $main-color
                 font-size 1.2rem
+                margin-bottom 1em
 
             .wcorg-organizer
                 align-items center
@@ -33,42 +35,37 @@
 
             .sponsor-level
                 margin-bottom 40px
+                &:after
+                    clear both
 
                 a.sponsor-logo
+                    color $main-color
+                    align-items center
                     box-shadow none
                     float left
 
                     .attachment-wcb-sponsor-logo-horizontal-2x
-                        border-bottom 4px solid $sponsor-border
-                        border-right 4px solid $sponsor-border
-                        border-top 4px solid $sponsor-border
                         box-shadow none
-
-                a.sponsor-logo:nth-child( even )
-                    .attachment-wcb-sponsor-logo-horizontal-2x
-                        border-left 4px solid $sponsor-border
 
                 a.sponsor-logo:hover
                     box-shadow none
 
             .gold
-                a.sponsor-logo
-                    .attachment-wcb-sponsor-logo-horizontal-2x
-                        max-height 150px
+                a
+                    height 150px
+                    max-width 260px
 
             .silver
-                a.sponsor-logo
-                    .attachment-wcb-sponsor-logo-horizontal-2x
-                        max-height 130px
+                a
+                    height 120px
+                    max-width 200px
 
             .bronze
-                a.sponsor-logo
-                    .attachment-wcb-sponsor-logo-horizontal-2x
-                        max-height 100px
+                a
+                    height 100px
+                    max-width 150px
 
 .site-info
-    font-weight bold
 
     @media screen and ( min-width: $screen-md-min )
         text-align right
-
