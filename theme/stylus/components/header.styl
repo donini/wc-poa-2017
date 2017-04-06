@@ -48,47 +48,62 @@ body.has-header-video
 .site-branding
     .wrap
         text-align center
+        width 800px
 
     .site-description
-        background-color rgba( 0, 56, 153, 0.5 )
+        background-color #3260ad
         padding 2px
 
     .site-title
-        background-color rgba( 0, 56, 153, 0.8 )
+        background-color $main-color
+        font-size 1.7rem
         padding 3px 7px
 
 .home
     .site-branding
         text-align center
 
-    .site-title
-        display none
+    .custom-header-media
+        .wp-custom-header
+            &:after
+                background-image url( 'https://2017.portoalegre.wordcamp.org/files/2017/04/logo_top_home.png' )
+                background-size contain
+                content ''
+                height 0
+                left 5%
+                padding-bottom 38.03% // proportional logo height in relation of width
+                position fixed
+                top 10px
+                width 90%
 
-    .site-description
-        clear none
-        font-size 24px
-        font-size 1.5rem
-        font-weight 800
-        letter-spacing .08em
-        line-height 1.25
-        margin 0
-        padding 0
-        text-transform: uppercase
+                @media screen and ( min-width: $screen-sm-min )
+                    height 300px
+                    left 50%
+                    margin-left -160px
+                    top 40%
+                    padding-bottom 0
+                    width 300px
+        &:before
+            background none
 
-    .custom-header-media:before
-        background none
+    .site-branding
+        position fixed !important
+        z-index auto
+        margin-bottom 40 !important
 
-    .site-branding .site-description
-        background-color $main-color
-        opacity 1
-        padding 2px 8px
+        .site-description
+            opacity 1
+            padding 2px 8px
 
-.has-header-image:not( .twentyseventeen-front-page ):not( .home ) .custom-header-media img
-    height auto
-    top -260px
+
+.has-header-image:not( .twentyseventeen-front-page ):not( .home )
+    .custom-header-media
+        &:before
+            background none
+        img
+            content:url( 'https://2017.portoalegre.wordcamp.org/files/2017/04/mosaico-porto-alegre_azul.jpg ');
+            height auto
+            top -66px
 
 .panel-image:before
     background linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% )
-
-.custom-header-media:before
-    background linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 0%, rgba( 255, 255, 255, 0.3 ) 75%, rgba( 255, 255, 255, 0.3 ) 100% )
