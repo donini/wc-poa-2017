@@ -48,7 +48,7 @@ body.has-header-video
 .site-branding
     .wrap
         text-align center
-        width 800px
+        max-width 800px
 
     .site-description
         background-color #3260ad
@@ -87,9 +87,9 @@ body.has-header-video
             background none
 
     .site-branding
-        position fixed !important
-        z-index auto
-        margin-bottom 40 !important
+        bottom auto
+        position absolute
+        top 0
 
         .site-description
             opacity 1
@@ -100,10 +100,19 @@ body.has-header-video
     .custom-header-media
         &:before
             background none
+
         img
-            content:url( 'https://2017.portoalegre.wordcamp.org/files/2017/04/mosaico-porto-alegre_azul.jpg ');
+            content url( 'https://2017.portoalegre.wordcamp.org/files/2017/04/mosaico-porto-alegre_azul.jpg' )
             height auto
             top -66px
+
+.has-header-image.twentyseventeen-front-page
+    .custom-header
+        height 100vh
+
+    .site-branding
+        @media screen and ( min-width: $screen-sm-min )
+            padding 54px 0
 
 .panel-image:before
     background linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% )
