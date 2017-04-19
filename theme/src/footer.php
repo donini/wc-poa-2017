@@ -1,7 +1,5 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="wrap">
-		
-
 		<aside class="widget-area" role="complementary">
 			<div class="widget-column footer-widget-1">
 				<section id="wcpt_organizers-3" class="widget wcpt_widget_organizers"><h2 class="widget-title">Organizadores</h2>		<div class="wcorg-organizers">
