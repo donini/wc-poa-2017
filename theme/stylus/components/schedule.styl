@@ -15,6 +15,9 @@ table.wcpt-schedule
                 padding 6px
     tr
         border-bottom 0
+        @media screen and (max-width: 700px)
+            border 0
+            margin-bottom 0
         th, td
             border 1px solid #eee
             padding 6px
@@ -22,20 +25,28 @@ table.wcpt-schedule
                 border-right 1px solid #eee
                 display inline-block
                 width 500px
+                @media screen and (max-width: 700px)
+                    width 100%
             .wcpt-track-description
                 display inline-block
                 width 155px
+                @media screen and (max-width: 700px)
+                    width 100%
             .wcpt-session-title
                 border-right 1px solid #eee
                 display inline-block
                 padding 6px
                 box-shadow none
                 width 500px
+                @media screen and (max-width: 700px)
+                    width 100%
             .wcpt-session-speakers
                 display inline-block
                 padding 6px
                 vertical-align top
                 width 155px
+                @media screen and (max-width: 700px)
+                    width 100%
         .wcpt-time
             text-align center
         .wcpt-session-type-session
